@@ -13,14 +13,12 @@ function NavBar() {
                             <Navbar expand="xl" bg="dark" variant="dark">
                                 <Container>
                                     <Navbar.Brand>
-                                        <Link to="/" style={{"text-decoration" : "none"}}>
+                                        <Link to="/" style={{"textDecoration" : "none"}}>
                                             <Brand />
                                         </Link>
                                     </Navbar.Brand>
                                     <Nav className="me-auto justify-content-end flex-grow-1 pe-3">
-                                        <Nav.Link>
                                             <NavBarItems />
-                                        </Nav.Link>
                                     </Nav>
                                     <Nav className="me-auto" >
                                         <CartWidget />

@@ -16,7 +16,11 @@ function Item({id, stock, title, price, img}) {
                 {stock} unidades disponibles
               </Card.Text>
               <Card.Text>
-                <Button className="mb-2 linkStyle" id="toggle-check" type="checkbox" variant="outline-secondary" href={`/item/${id}`}>Más detalles...</Button>
+              <Link to={`/item/${id}`}>
+                <Button className="mb-2 linkStyle" id="toggle-check" type="checkbox" variant="outline-secondary">
+                  Más detalles...
+                </Button>
+              </Link>
               </Card.Text>
             </Card.Body>
           </Card>
